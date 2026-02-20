@@ -1,4 +1,8 @@
 title: HyperC Notes
 description: Apuntes de HTB y CTF
-theme: just-the-docs
+
+remote_theme: just-the-docs/just-the-docs
 color_scheme: dark
+
+plugins:
+  - jekyll-remote-theme
