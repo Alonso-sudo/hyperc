@@ -24,7 +24,7 @@ theme:
 
 
 
-pluginscustom_dir: 
+plugins: 
   - search:
       lang: en
   - awesome-pages
