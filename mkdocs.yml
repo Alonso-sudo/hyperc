@@ -1,0 +1,10 @@
+site_name: HyperC Notes
+
+theme:
+  name: material
+  palette:
+    scheme: slate
+
+nav:
+  - Home: index.md
+  - Hack The Box: hack-the-box/
