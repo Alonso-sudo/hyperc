@@ -1,11 +1,15 @@
 ---
-layout: home
-title: Inicio
+title: Home
+nav_order: 1
 ---
 
-# Bienvenido a mis apuntes
+# 👾 HyperC Notes
 
-Aquí iré subiendo todo lo que aprendo sobre:
-- Máquinas de HackTheBox
-- Programación
-- Sistemas y redes
+Bienvenido a mi base de conocimiento técnica.
+
+## 📂 Secciones
+
+- Hack The Box
+- CTF
+- Pentesting Notes
+- Cheatsheets
