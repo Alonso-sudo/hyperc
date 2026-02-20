@@ -5,6 +5,6 @@ theme:
   palette:
     scheme: slate
 
-nav:
-  - Home: index.md
-  - Hack The Box: hack-the-box/
+plugins:
+  - search
+  - awesome-pages
