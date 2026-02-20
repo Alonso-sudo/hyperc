@@ -2,9 +2,25 @@ site_name: HyperC Notes
 
 theme:
   name: material
+  logo: assets/images/logo.jpg
   palette:
-    scheme: slate
+    - scheme: slate
+      primary: black
+      accent: red
+
+  features:
+    - navigation.expand
+    - navigation.sections
+    - navigation.top
+    - navigation.instant
+    - content.code.copy
+    - search.highlight
+    - search.suggest
+
 
 plugins:
   - search
   - awesome-pages
+
+extra_css:
+  - assets/stylesheets/extra.css
