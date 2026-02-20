@@ -52,3 +52,5 @@ I don't like sticking to the surface. If something works, I ask "why?" If someth
 ![HTB](https://img.shields.io/badge/HTB-Active-red)
 ![OSCP](https://img.shields.io/badge/OSCP-In_Progress-darkred)
 ![Focus](https://img.shields.io/badge/Focus-AD_Exploitation-black)
+![Focus](https://img.shields.io/badge/Focus-Web_Exploitation-black)
+
