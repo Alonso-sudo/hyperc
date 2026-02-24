@@ -1,6 +1,6 @@
 # Guardian
 
-# Initial Port Scanning
+## Initial Port Scanning
 
 ``` python
 # Nmap 7.95 scan initiated Tue Feb 24 12:45:56 2026 as: /usr/lib/nmap/nmap --privileged -p- -Pn -v --min-rate 1000 --max-rtt-timeout 1000ms --max-retries 5 -oN nmap_ports.txt 10.129.249.149
@@ -150,7 +150,7 @@ In the composer.json file:
 }
 ```
 
-## What is phpspreadsheet?
+	## What is phpspreadsheet?
 
 Is a popular open-source PHP library used to read, write and manipulate spreadsheet files (such as .xlsx, .xls, and .csv) directly within PHP applications.
 
