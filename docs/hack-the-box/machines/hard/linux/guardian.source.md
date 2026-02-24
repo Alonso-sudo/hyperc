@@ -93,7 +93,38 @@ Please don't forget to checkout the
 ```
 
 ``` python
-Guardian University Student Portal Guide Welcome to the Guardian University Student Portal! This guide will help you get started and ensure your account is secure. Please read the instructions below carefully. Important Login Information: 1. Your default password is: GU1234 2. For security reasons, you must change your password immediately after your first login. 3. To change your password: - Log in to the student portal. - Navigate to 'Account Settings' or 'Profile Settings'. - Select 'Change Password' and follow the instructions. Portal Features: The Guardian University Student Portal offers a wide range of features to help you manage your academic journey effectively. Key features include: - Viewing your course schedule and timetables. - Accessing grades and academic records. - Submitting assignments and viewing feedback from faculty. - Communicating with faculty and peers via the messaging system. - Staying updated with the latest announcements and notices. Tips for First-Time Users: - Bookmark the portal login page for quick access. - Use a strong, unique password for your account. - Familiarize yourself with the portal layout and navigation. - Check your inbox regularly for important updates. Need Help? If you encounter any issues while logging in or changing your password, please contact the IT Support Desk at: Email: support@guardian.htb Remember, your student portal is the gateway to your academic journey at Guardian University. Keep your credentials secure and never share them with anyone.
+Guardian University Student Portal Guide
+
+Welcome to the Guardian University Student Portal! This guide will help you get started and ensure your account is secure. Please read the instructions below carefully
+
+Important Login Information:
+1. Your default password is: GU1234 
+2. For security reasons, you must change your password immediately after your first login. 
+3. To change your password: 
+- Log in to the student portal. 
+- Navigate to 'Account Settings' or 'Profile Settings'. 
+- Select 'Change Password' and follow the instructions.
+  
+Portal Features:
+The Guardian University Student Portal offers a wide range of features to help you manage your academic journey effectively. Key features include:
+
+- Viewing your course schedule and timetables. 
+- Accessing grades and academic records. 
+- Submitting assignments and viewing feedback from faculty. 
+- Communicating with faculty and peers via the messaging system. 
+- Staying updated with the latest announcements and notices.
+  
+Tips for First-Time Users:
+- Bookmark the portal login page for quick access. 
+- Use a strong, unique password for your account.
+- Familiarize yourself with the portal layout and navigation. 
+- Check your inbox regularly for important updates.
+  
+Need Help?
+If you encounter any issues while logging in or changing your password, please contact the IT Support Desk at:
+Email: support@guardian.htb
+
+Remember, your student portal is the gateway to your academic journey at Guardian University. Keep your credentials secure and never share them with anyone.
 ```
 
 ![guide](Media/portalGuide.png)
@@ -181,6 +212,42 @@ Is a popular open-source PHP library used to read, write and manipulate spreadsh
             $html .= '</ul>' . PHP_EOL;
         }
 ```
+
+#### Analysis
+
+The $html variable is initialized, which stores the dynamically generated HTML content.
+
+``` php
+$html = '';
+```
+
+Multi-sheet verification
+
+If the document has more than multiple pages, only in that case is a navigation menu generated.
+
+``` php
+if (count($sheets) > 1)
+```
+
+An unordered list is appended to the HTML string.
+
+``` php
+$html .= '<ul class="navigation">' . PHP_EOL;
+```
+
+Iteration on spreadsheets
+
+``` php
+foreach ($sheets as $sheet) {
+	$html .= '  <li class="sheet' . $sheetId . '"><a href="#sheet' . $sheetId . '">' . $sheet->getTitle() . '</a></li>' . PHP_EOL;
+	++$sheetId;
+}
+```
+
+
+
+
+
 
 
 
